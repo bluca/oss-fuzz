@@ -131,6 +131,7 @@ def main():
   """Build modified projects on travis."""
   projects = get_modified_buildable_projects()
   failed_projects = []
+  projects = ['libzmq']
   for project in projects:
     try:
       build_project(project)
